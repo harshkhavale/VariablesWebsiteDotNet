@@ -1,1 +1,0 @@
-﻿Drop table BrandTbl;

@@ -1,0 +1,102 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminPage.master.cs" Inherits="AdminPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>variables.com(ADMIN)</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+      <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="shortcut icon" type="image/x-icon" href="~/img/favicon.ico" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet"/>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+
+           <div class=" mt-0 w-100 sticky-top bg-light" >
+        <nav class="navbar navbar-expand-lg d-flex justify-content-between" style="font-family: 'Quicksand', sans-serif;"  >
+  <div class="container-fluid " style="height:8vh">
+    <a class="navbar-brand" href="AdminHome.aspx">
+        <img src="img/logo.png" style="height:5vh" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-3 d-flex ">
+       
+           <li class="nav-item mx-2">
+          <a class="btn btn-sm rounded-4 btn-outline-dark" style="border:none" href="UserData.aspx">UserData</a>
+        </li>
+           <li class="nav-item mx-2">
+          <a class="btn btn-sm rounded-4 btn-outline-dark" style="border:none" href="ProductsDelivery.aspx">Deliverys</a>
+        </li>
+            
+           <li class="nav-item mx-2">
+           <a class="btn btn-sm rounded-4 btn-outline-dark" style="border:none" href="AddProducts.aspx">AddProducts</a>
+        </li>
+          <li class="nav-item mx-2">
+           <a class="btn btn-sm rounded-4 btn-outline-dark" style="border:none" href="AddBrand.aspx">Brands</a>
+        </li>
+          <li class="nav-item mx-2">
+           <a class="btn btn-sm rounded-4 btn-outline-dark" style="border:none" href="AddCategory.aspx">Category's</a>
+        </li>
+          <li class="nav-item mx-2">
+           <a class="btn btn-sm rounded-4 btn-outline-dark" style="border:none" href="AddSubCategory.aspx">SubCategory's</a>
+        </li>
+
+
+          
+          
+          
+          </ul>
+    </div>
+      <div class="d-flex mx-2 col-md-3">
+          
+ <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+              
+                                 <button class="btn btn-sm btn-outline-primary" type="submit">Search</button>
+      </div>
+       <div class="card-body" style="display:flex;margin-left:10vw">
+            <asp:Button ID="logout" runat="server" style="border:none" class="btn btn-sm rounded-4 btn-outline-dark mx-1" PostBackUrl="~/SignInPage.aspx" 
+                             Text="logout" OnClick="logout_Click" UseSubmitBehavior="False" CausesValidation="false" />
+                         &nbsp;&nbsp;&nbsp;
+           
+             
+
+               </div>
+             
+
+  </div>
+            
+</nav>
+        </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        <h1>harsh</h1>
+        </asp:ContentPlaceHolder>
+    </div>
+
+    </form>
+            <footer class="footer mt-auto py-3 bg-light">
+  <div class="container d-flex justify-content-between">
+   <p class="col-md-4 mb-0 text-muted">© 2022 Variables.Pvt.Lmt Company, Inc</p>
+
+  
+
+   
+  </div>
+</footer>
+
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+</body>
+</html>

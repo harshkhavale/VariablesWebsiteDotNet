@@ -1,0 +1,25 @@
+﻿
+
+.center {
+    align-content:center;
+    align-items:center;
+    text-align: center;
+    justify-content:center;
+    
+}
+.imgsize{
+    height:300px;
+}
+.crd {
+    height: 50vh;
+    width: auto;
+    background-color: white;
+    border-radius: 30px;
+    margin: 5vh;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.crd:hover {
+        transform: scale(1.1,1.1)
+}

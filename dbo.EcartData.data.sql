@@ -1,2 +1,0 @@
-﻿INSERT INTO [dbo].[EcartData] ([username], [password], [confirmpassword], [fullname], [email], [usertype]) VALUES (N'harshkhavale_11', N'pranaya', N'pranaya', N'harsh khavale', N'harshkhavale1102@gmail.com', N'Admin')
-INSERT INTO [dbo].[EcartData] ([username], [password], [confirmpassword], [fullname], [email], [usertype]) VALUES (N'manjumathad', N'sagar', N'tejas', N'fullname', N'harshkhavale110jsins2@gmail.com', NULL)

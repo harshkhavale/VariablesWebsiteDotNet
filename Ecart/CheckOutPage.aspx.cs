@@ -188,7 +188,7 @@ public partial class CheckOutPage : System.Web.UI.Page
         {
             client.EnableSsl = true;
             client.UseDefaultCredentials = false;
-            client.Credentials = new NetworkCredential("variables.pvt.lmt@gmail.com", "GmailAppKey");
+            client.Credentials = new NetworkCredential("YourEmailAddress", "GmailAppKey");
             client.Host = "smtp.gmail.com";
             client.Port = 587;
             client.DeliveryMethod = SmtpDeliveryMethod.Network;

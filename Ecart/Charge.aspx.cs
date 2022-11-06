@@ -18,8 +18,8 @@ public partial class Charge : System.Web.UI.Page
         Dictionary<string, object> input = new Dictionary<string, object>();
         input.Add("amount", 100); // this amount should be same as transaction amount
 
-        string key = "rzp_test_ilcuZJqoFxPDxu";
-        string secret = "6Gc8tLUFLgm28SqA1pXNYe7M";
+        string key = "RazorPayKey";
+        string secret = "RazorPaySecretKey";
 
         RazorpayClient client = new RazorpayClient(key, secret);
 

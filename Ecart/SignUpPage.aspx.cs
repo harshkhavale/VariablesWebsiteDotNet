@@ -182,7 +182,7 @@ public partial class SignUpPage : System.Web.UI.Page
     {
         // email send process -
         String ToEmailAddress = Email;
-        MailMessage PassRecMail = new MailMessage("variables.pvt.lmt@gmail.com", ToEmailAddress);
+        MailMessage PassRecMail = new MailMessage("YourEmailAddress", ToEmailAddress);
         PassRecMail.Body = EmailBody;
         PassRecMail.IsBodyHtml = true;
         PassRecMail.Subject = "OTP";
@@ -191,7 +191,7 @@ public partial class SignUpPage : System.Web.UI.Page
         {
             client.EnableSsl = true;
             client.UseDefaultCredentials = false;
-            client.Credentials = new NetworkCredential("variables.pvt.lmt@gmail.com", "wjzetlselrriunzq");
+            client.Credentials = new NetworkCredential("YourEmailAddress", "GmailAppCode");
             client.Host = "smtp.gmail.com";
             client.Port = 587;
             client.DeliveryMethod = SmtpDeliveryMethod.Network;

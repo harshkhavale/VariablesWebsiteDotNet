@@ -198,7 +198,7 @@ public partial class PaymentPage : System.Web.UI.Page
         // email send process -
         String ToEmailAddress = Email;
         String Username = UserName ;
-        MailMessage PassRecMail = new MailMessage("variables.pvt.lmt@gmail.com", ToEmailAddress);
+        MailMessage PassRecMail = new MailMessage("YourEmail", ToEmailAddress);
         PassRecMail.Body = EmailBody;
         PassRecMail.IsBodyHtml = true;
         PassRecMail.Subject = "Order Approved!";
@@ -207,7 +207,7 @@ public partial class PaymentPage : System.Web.UI.Page
         {
             client.EnableSsl = true;
             client.UseDefaultCredentials = false;
-            client.Credentials = new NetworkCredential("variables.pvt.lmt@gmail.com", "wjzetlselrriunzq");
+            client.Credentials = new NetworkCredential("YourEmail", "GmailAppKey");
             client.Host = "smtp.gmail.com";
             client.Port = 587;
             client.DeliveryMethod = SmtpDeliveryMethod.Network;

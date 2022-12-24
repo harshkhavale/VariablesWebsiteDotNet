@@ -12,7 +12,6 @@ public partial class Charge : System.Web.UI.Page
     {
         Response.Write("<script>alert('your order placed SUCCESSFULLY!')</script>");
 
-
         string paymentId = Request.Form["razorpay_payment_id"];
 
         Dictionary<string, object> input = new Dictionary<string, object>();

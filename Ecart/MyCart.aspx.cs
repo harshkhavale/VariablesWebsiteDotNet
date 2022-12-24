@@ -15,8 +15,12 @@ public partial class MyCart : System.Web.UI.Page
     string pids;
     protected void Page_Load(object sender, EventArgs e)
     {
-        usrcartlbl.InnerText = Session["username"].ToString() + "'s Cart";
-        GetCartItems();
+        if (Session["username"] != null)
+        {
+            usrcartlbl.InnerText = Session["username"].ToString() + "'s Cart";
+            GetCartItems();
+        }
+       
         
     }
    

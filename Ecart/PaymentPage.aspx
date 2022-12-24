@@ -7,10 +7,10 @@
     
 
 
-    <div class="container my-4 w-100 h-100 sticky-top" style="font-family: 'Quicksand', sans-serif;">
+    <div class="container mx-4" style="font-family: 'Quicksand', sans-serif;">
 
-<div class="row my-3">
-   <div class="col-4 position-fixed start-0">
+<div class="row my-3 mx-4">
+   <div class="col-4 position-absolute end-0">
                                <h5 style="font-size:large;font-family: 'Quicksand', sans-serif;" class="badge bg-success my-2 ">PAYMENT</h5>
 
     <div id="list-example" class="list-group">
@@ -20,16 +20,16 @@
       <a class="list-group-item list-group-item-action" href="#list-item-4">Proceed</a>
     </div>
   </div>
-  <div class="col-8  position-absolute end-0" >
+
+
+
+
+  <div class="col-8" style="margin-left:10vw" >
      
-    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+    <div >
       
         <h4 id="list-item-1" class="my-4">Enter Details</h4>
       
-      
-
-
-
             <div class="col-sm">
       <asp:Label ID="Label2" runat="server" Text="Enter Name"  class="form-label"
           Visible="True"></asp:Label>
@@ -120,12 +120,6 @@
 
 
 
-
-
-     
-
-
-
       <h4 id="list-item-2" class="my-4">Select Payment Method</h4>
         
       <div class=" btn btn-lg my-4 mx-2 bg-danger text-light">
@@ -143,6 +137,8 @@
 
 
 </div>
+
+
         <asp:Label ID="RadioLbl" runat="server" Text="" ForeColor="#FF3300"></asp:Label>
        
       <h4 id="list-item-3" class="my-4">Product-Summary</h4>
@@ -151,9 +147,9 @@
                       <asp:Repeater ID="productrptr" runat="server">
                 <ItemTemplate>
                     
-                     <div class="card mx-3 mb-4" style="width: 15rem">
+                     <div class="card mx-3 text-dark mb-4" style="width: 15rem">
                        
-  <img src="Img/ProductImg/<%#Eval("ProductId") %>/<%# Eval("Name")%><%# Eval("Extention") %>" class="card-img-top h-50" alt="<%#Eval("Name") %>">
+  <img src="Img/ProductImg/<%#Eval("ProductId") %>/<%# Eval("Name")%><%# Eval("Extention") %>" class="card-img-top h-50 p-1" alt="<%#Eval("Name") %>">
   <div class="card-body ">
       <div class="position-relative start-0 " >
 

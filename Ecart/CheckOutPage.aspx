@@ -93,7 +93,7 @@
       
     <div class="container d-flex justify-content-center" >
 
-        <button class="btn btn-primary" style="font-family: 'Quicksand', sans-serif;" id="rzp-button1">Process Payment</button>
+        <button class="btn btn-primary my-4" style="font-family: 'Quicksand', sans-serif;" id="rzp-button1">Process Payment</button>
         <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
         
         <script src="https://checkout.razorpay.com/v1/checkout.js"></script>

@@ -50,7 +50,7 @@ public partial class ForgotPassword : System.Web.UI.Page
                 {
                     client.EnableSsl = true;
                     client.UseDefaultCredentials = false;
-                    client.Credentials = new NetworkCredential("variables.pvt.lmt@gmail.com", "wjzetlselrriunzq");
+                    client.Credentials = new NetworkCredential("variables.pvt.lmt@gmail.com", "fukuybeacaxmzhoe");
                     client.Host = "smtp.gmail.com";
                     client.Port = 587;
                     client.DeliveryMethod = SmtpDeliveryMethod.Network;

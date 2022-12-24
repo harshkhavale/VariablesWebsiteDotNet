@@ -126,7 +126,7 @@ public partial class PaymentPage : System.Web.UI.Page
 
                         clr();
                     }
-                    Response.Redirect("<script>alert('Product Purchased')</script>");
+                    Response.Write("<script>alert('Product Purchased')</script>");
 
                     Response.Redirect("~/MyCart.aspx");
 
@@ -203,17 +203,25 @@ public partial class PaymentPage : System.Web.UI.Page
         PassRecMail.IsBodyHtml = true;
         PassRecMail.Subject = "Order Approved!";
 
-        using (SmtpClient client = new SmtpClient())
-        {
-            client.EnableSsl = true;
-            client.UseDefaultCredentials = false;
-            client.Credentials = new NetworkCredential("variables.pvt.lmt@gmail.com", "wjzetlselrriunzq");
-            client.Host = "smtp.gmail.com";
-            client.Port = 587;
-            client.DeliveryMethod = SmtpDeliveryMethod.Network;
-            client.Send(PassRecMail);
+        try {
+            using (SmtpClient client = new SmtpClient())
+            {
+                client.EnableSsl = true;
+                client.UseDefaultCredentials = false;
+                client.Credentials = new NetworkCredential("variables.pvt.lmt@gmail.com", "ehokofsqgllxkcsq");
+                client.Host = "smtp.gmail.com";
+                client.Port = 587;
+                client.DeliveryMethod = SmtpDeliveryMethod.Network;
+                client.Send(PassRecMail);
+
+            }
+        }
+        catch {
+            Response.Write("<script>alert('Product Purchased but email failed')</script>");
+
 
         }
+
 
     }
 }

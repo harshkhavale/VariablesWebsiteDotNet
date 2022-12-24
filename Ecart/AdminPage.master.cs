@@ -10,6 +10,11 @@ public partial class AdminPage : System.Web.UI.MasterPage
     protected void Page_Load(object sender, EventArgs e)
     {
 
+        if (Session["username"] == null)
+        {
+            Response.Redirect("~/SignInPage.aspx");
+        }
+       
     }
 
     protected void logout_Click(object sender, EventArgs e)

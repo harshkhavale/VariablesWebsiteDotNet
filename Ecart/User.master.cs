@@ -12,21 +12,18 @@ public partial class User : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Session["username"] != null)
-        { 
-            logout.Visible = true;
-            BindCartNumber();
+
+        if (Session["username"]== null)
+        {
+            Response.Redirect("~/SignInPage.aspx");
         }
         else
         {
-            logout.Visible = false;
-            Response.Redirect("~/DefaultPage.aspx");
+            BindCartNumber();
 
         }
-        
-            
 
-        
+
     }
     protected void logout_Click(object sender, EventArgs e)
     {

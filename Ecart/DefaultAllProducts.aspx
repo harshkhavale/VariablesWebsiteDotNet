@@ -5,7 +5,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
      <div class="container my-2" style="font-family: 'Quicksand', sans-serif;">
-                                                       <h5 style="font-size:large" class="badge bg-success my-2 "> ALL PRODUCTS</h5>
+                                                       <h5 style="font-size:large" class="badge bg-success my-2 rounded-0"> ALL PRODUCTS</h5>
 <br /><br />
                             <h5 class="badge bg-warning mb-0 ">New Launch</h5>
 

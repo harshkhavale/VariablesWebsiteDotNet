@@ -6,7 +6,7 @@
 
      
           
-          <div class="container" style="font-family: 'Quicksand', sans-serif;">
+          <div class="container mt-2" style="font-family: 'Quicksand', sans-serif;">
              
                 <h5 style="font-size:large;font-family: 'Quicksand', sans-serif;" class="badge bg-success my-2 "> SIGN IN</h5>
 <br />
@@ -71,13 +71,17 @@
                       NavigateUrl="~/ForgotPassword.aspx">Forgot Password</asp:HyperLink>
                   <br />
                   <br />
+                   <asp:HyperLink ID="HaveAccount" CssClass="link-warning" runat="server" 
+                      NavigateUrl="~/PreSignUp.aspx">Dont Have any Acoount?</asp:HyperLink>
                   <br />
                   <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
                       ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
                       SelectCommand="SELECT * FROM [EcartData]"></asp:SqlDataSource>
-                  <br />
-                  <asp:Label ID="notification" runat="server"></asp:Label>
+                  
+                  
+                            <br />
               </div>
+
                    </div>
 </asp:Content>
 

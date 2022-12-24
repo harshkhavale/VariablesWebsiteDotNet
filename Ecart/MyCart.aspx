@@ -13,7 +13,7 @@
                  <ItemTemplate>
                                                      <a href="ViewMore.aspx?PID=<%#Eval("ProductId")%>" style="text-decoration:none;color:black;display:contents">
 
-                             <div class="row d-flex border rounded  flex-md-row mb-4 shadow-sm h-md-250 " style="display:flex">
+                             <div class="row d-flex border rounded-4 bg-light  flex-md-row mb-4 shadow-sm h-md-250 " style="display:flex">
 
                                  <div class="col-auto d-none d-lg-block mx-3 my-3">
           <img class="bd-placeholder-img" style="width:20vw" src="Img/ProductImg/<%#Eval("ProductId") %>/<%# Eval("ImageName")%><%# Eval("Extention") %>" alt="<%#Eval("ImageName") %>"/>          
@@ -46,18 +46,19 @@
                         
 
 
-    <div class="col-2 h-100 position-fixed mx-2 top-0 end-0" style="font-family: 'Quicksand', sans-serif;margin-top:15vh;">
-        <div class="card mb-4 rounded-3 shadow-sm border-warning h-75">
-          <div class="card-header py-3 text-bg-warning border-warning">
+    <div class="col-2 h-100 position-fixed mx-2 top-0 end-0" style="font-family: 'Quicksand', sans-serif;margin-top:40vh;">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary h-50">
+          <div class="card-header py-3 text-bg-primary border-primary">
             <h4 class="my-0 fw-normal">SubTotal<br />(<span runat="server" id="ProductNumLbl">(0)</span> PRODUCTS)</h4>
           </div>
           <div class="card-body h-50">
                                        <h4 class="link-primary">Cart Total</h4>
               <p id="pid" runat="server"></p>
-            <h1 class="card-title pricing-card-title"><small class=" fw-light">            <h1 class="card-title pricing-card-title" id="TotalSellingPricelbl" runat="server">PRICE<small class="text-muted fw-light">/mo</small></h1>
+            <h1 class="card-title pricing-card-title"><small class=" text-success"> 
+                <h1 class="card-title pricing-card-title" id="TotalSellingPricelbl" runat="server">PRICE<small class="text-muted text-success">/mo</small></h1>
 </small></h1>
                             <h4  style="text-decoration:line-through;color:red" id="TotalPricelbl" runat="server">mrp</h4>
-          <asp:Button ID="BuyAllBtn" runat="server" class="w-100 btn btn-lg btn-warning" OnClick="BuyAllBtn_Click" Text="BUY ALL" UseSubmitBehavior="False" />
+          <asp:Button ID="BuyAllBtn" runat="server" class="w-100 btn btn-lg btn-primary" OnClick="BuyAllBtn_Click" Text="BUY ALL" UseSubmitBehavior="False" />
           </div>
         </div>
       </div>

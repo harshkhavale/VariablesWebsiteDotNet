@@ -15,7 +15,6 @@ public partial class UserHome : System.Web.UI.Page
 
         if (!IsPostBack)
         {
-            Response.Write("<script>alert('Hello, " + Session["username"] + "')</script>");
 
             BindProductRptr();
         }

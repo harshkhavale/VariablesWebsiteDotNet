@@ -39,58 +39,44 @@
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body>
+<body style="" class="bg-dark text-light">
     <form id="form1" runat="server">
     <div>
 
 
-         <div class=" mt-0 w-100 sticky-top bg-light" style="z-index:4000" >
+         <div class=" mt-0 w-100 sticky-top shadow bg-light" style="z-index:4000" >
         <nav class="navbar navbar-expand-lg d-flex justify-content-between" style="font-family: 'Quicksand', sans-serif;"  >
   <div class="container-fluid " style="height:8vh">
     <a class="navbar-brand" href="DefaultPage.aspx">
-        <img src="img/logo.png" style="height:5vh" />
+        <img src="img/logo.png" style="height:7vh" />
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+         <p class="col-md-12 mb-0 text-muted">welcome to VARIABLES, signup and let's get up to date!</p>
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-3 d-flex ">
-          <li class="nav-item mx-1">
-          <a class="btn btn-sm rounded-4 btn-outline-dark" style="border:none" href="DefaultAllProducts.aspx">AllProducts</a>
-
-        </li>
-        <li class="nav-item mx-1">
-          <a class="btn btn-sm rounded-4 btn-outline-dark" style="border:none" href="DefaultCategoryPages.aspx?catname=Smartphones">Smartphones</a>
-        </li>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-3 d-flex position-absolute end-0 ">
+               
            <li class="nav-item mx-1">
-          <a class="btn btn-sm rounded-4 btn-outline-dark" style="border:none" href="DefaultCategoryPages.aspx?catname=TV">TV&AV</a>
-        </li>
-            <li class="nav-item mx-1">
-           <a class="btn btn-sm rounded-4 btn-outline-dark" style="border:none" href="DefaultCategoryPages.aspx?catname=Laptops">Laptops</a>
-        </li>
-           <li class="nav-item mx-1">
-           <a class="btn btn-sm rounded-4 btn-outline-dark" style="border:none" href="DefaultCategoryPages.aspx?catname=Speakers">Spekers</a>
-        </li>
-           <li class="nav-item mx-1">
-           <a class="btn btn-sm rounded-4 btn-outline-dark" style="border:none" href="DefaultCategoryPages.aspx?catname=Smartwatches">Smartwatches</a>
-        </li>
-          <li class="nav-item mx-1">
-          <a class="btn btn-sm rounded-4 btn-outline-dark" style="border:none" href="DefaultCategoryPages.aspx?catname=Earphones">Earphones</a>
-
-        </li>
-           
-          </ul>
-    </div>
-      <div class="d-flex mx-2 col-md-3">
+                <div class="d-flex mx-2 col-12">
           
  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
               
                                  <button class="btn btn-sm btn-outline-primary" type="submit">Search</button>
       </div>
-       <div class="card-body mx-2" style="display:flex ">
-                <a href="SignInPage.aspx" class="btn btn-sm rounded-4 btn-outline-dark mx-1" style="border:none">SignIn</a>&nbsp;&nbsp;&nbsp;               
-                <a href="SignUpPage.aspx" class="btn btn-sm rounded-4 btn-outline-dark mx-1" style="border:none">SignUp</a>
+        </li>
+
+          <li class="nav-item mx-1">
+                <div class="card-body mx-2">
+               <a href="SignInPage.aspx" class="btn btn-sm rounded-4 mx-2 " data-bs-toggle="tooltip" data-bs-title="Default tooltip" style="border:none"><img src="img/icons/add-user.png" style="height:4vh" /></a>
              </div>
+        </li>
+           
+          </ul>
+    </div>
+     
+     
 
   </div>
             
@@ -103,17 +89,26 @@
     </div>
         <footer class="footer mt-auto py-3 bg-light" style="font-family: 'Quicksand', sans-serif;">
   <div class="container d-flex justify-content-between">
-   <p class="col-md-4 mb-0 text-muted">© 2022 Variables.Pvt.Lmt Company, Inc</p>
+   <p class="col-md-6 mb-0 text-muted">© 2022 Variables.Pvt.Lmt Company, Inc    Copyrights © HARSH KHAVALE</p>
 
+      <ul class="d-flex justify-content-between position-absolute end-0 " style="padding-right:3vw">
+          <li class="mx-3"><img src="img/icons/instagram.png" style="height:4vh"/></li>
+                    <li class="mx-3"><img src="img/icons/whatsapp.png" style="height:4vh"/></li>
+                    <li class="mx-3"><img src="img/icons/fb.png" style="height:4vh"/></li>
+
+      </ul>
   
 
    
   </div>
+
 </footer>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-    </form>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script>
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+            const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+        </script>
+           </form>
 
 </body>
 </html>

@@ -3,15 +3,16 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="container " style="font-family: 'Quicksand', sans-serif;">
+    <div class="container stickey-top" style="font-family: 'Quicksand', sans-serif;">
         <div class="d-flex justify-content-center my-4">
-         <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="currentColor" class="bi bi-person-circle my-2 mx-3" viewBox="0 0 16 16">
-  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-</svg>
-
+         <img src="img/icons/user.png" style="height:25vh"/>
+            
 
         </div>
+        <div class="d-flex justify-content-center"><asp:Label ID="FullNameLbl" runat="server" Text=""  class="form-label mx-2 display-6"
+          Visible="True"></asp:Label>
+                </div>
+
             <h5 style="font-size:large;font-family: 'Quicksand', sans-serif;" id="usrcartlbl" runat="server" class="my-4 badge bg-warning ">USER</h5>
 
        
@@ -24,8 +25,8 @@
        
 
 
-      <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
+      <div class="accordion " id="accordionExample">
+  <div class="accordion-item ">
     <h2 class="accordion-header" id="headingOne">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
         User Info
@@ -36,19 +37,6 @@
              <div>
 
 
-             <div class="col-sm d-flex my-2">
-      <asp:Label ID="Label2" runat="server" Text="Full Name"  class="form-label mx-2"
-          Visible="True"></asp:Label>
-             <br />
-      
-&nbsp;<div class="col-4">
-         
-    <asp:Label ID="FullNameLbl" runat="server" Text=""  class="form-label mx-2"
-          Visible="True"></asp:Label>
-&nbsp;
-      </div>
-   
-  </div>
 
                 <div class="col-sm d-flex my-2">
       <asp:Label ID="Label1" runat="server" Text="User Name"  class="form-label mx-2"
@@ -96,7 +84,7 @@
       </div>
     </div>
   </div>
-  <div class="accordion-item">
+  <div class="accordion-item ">
     <h2 class="accordion-header" id="headingTwo">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
         Change Password
@@ -157,7 +145,7 @@
       </div>
     </div>
   </div>
-  <div class="accordion-item">
+  <div class="accordion-item ">
     <h2 class="accordion-header" id="headingThree">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
         Orders

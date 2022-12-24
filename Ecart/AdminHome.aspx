@@ -8,7 +8,7 @@
 
          <div class="my-4">
         <div  style="padding-left:3vw" class="text-center my-4 p-4" >
-        <img class="bd-placeholder-img card-img-top w-50 h-50 my-4"  src="img/logo.png" role="img" focusable="true"></></img>
+        <img class="bd-placeholder-img card-img-top w-50 h-50 my-4"  src="img/variableWhiteLogo.png" role="img" focusable="true"></></img>
 
         <div class="card-body">
           <h5 class="card-title text-primary ">wellcome ADMIN !</h5>

@@ -58,7 +58,7 @@
             <HeaderTemplate>
                  <table class="table">
   <thead>
-    <tr>
+    <tr class="text-light">
       <th scope="col">ID's</th>
       <th scope="col">Category</th>
       <th scope="col">Sub-Category</th>
@@ -70,7 +70,7 @@
   <tbody>
             </HeaderTemplate>
             <ItemTemplate>
-                  <tr>
+                  <tr class="text-light">
       <th scope="row"> <%#Eval("SubCatId") %> </th>
       <td><%#Eval("CategoryName") %></td>
       <td><%#Eval("SubCategory") %></td>

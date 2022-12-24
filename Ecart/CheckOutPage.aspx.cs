@@ -77,8 +77,8 @@ public partial class CheckOutPage : System.Web.UI.Page
                     {
                         DataTable dt = new DataTable();
                         sda.Fill(dt);
-                        productname.Text = dt.Rows[0][1].ToString();
-                        sellingprice.Text = dt.Rows[0][3].ToString();
+                        productname.Text = dt.Rows[0][5].ToString();
+                        sellingprice.Text = dt.Rows[0][7].ToString();
 
                         productrptr.DataSource = dt;
                         productrptr.DataBind();
@@ -188,7 +188,7 @@ public partial class CheckOutPage : System.Web.UI.Page
         {
             client.EnableSsl = true;
             client.UseDefaultCredentials = false;
-            client.Credentials = new NetworkCredential("variables.pvt.lmt@gmail.com", "wjzetlselrriunzq");
+            client.Credentials = new NetworkCredential("variables.pvt.lmt@gmail.com", "fukuybeacaxmzhoe");
             client.Host = "smtp.gmail.com";
             client.Port = 587;
             client.DeliveryMethod = SmtpDeliveryMethod.Network;

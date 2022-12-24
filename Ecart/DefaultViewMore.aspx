@@ -23,7 +23,7 @@
           <ItemTemplate> 
      
                <div class="carousel-item <%#GetActiveImgClass(Container.ItemIndex)%> my-4 " >
-                     <img src="Img/ProductImg/<%#Eval("PId") %>/<%# Eval("Name")%><%# Eval("Extention") %>" class="card-img-top " alt="<%#Eval("Name") %>">
+                     <img src="Img/ProductImg/<%#Eval("PId") %>/<%# Eval("Name")%><%# Eval("Extention") %>" class="card-img-top rounded-4" alt="<%#Eval("Name") %>">
 
     </div>
        </ItemTemplate>
@@ -46,8 +46,8 @@
            
             <asp:Repeater ID="ProductDetailsRptr" runat="server">
                     <ItemTemplate>
-                    <div class="container my-2 mx-2 w-50 ">
-                 <div class="card-body">
+                    <div class="container my-2 mx-4 w-50 ">
+                 <div class="card-body mx-4">
     <h2 class="card-title"><%#Eval("ProductName") %></h2>
                      <br />
                      <h4 class="badge bg-danger">DEAL OF THE DAY</h4>
@@ -63,9 +63,9 @@
                      </div>
                      <h4 class="p-2 badge bg-primary"><em>SAVE : ₹ <%#String.Format("{0}",Convert.ToInt64(Eval("ProductPrice"))-Convert.ToInt64(Eval("ProductSellingPrice")))%></em></h4>
                      <br />    
-                     <p class="border border-dark rounded-4 p-2 text-dark text-center"><%#Eval("ProductHighlight1") %></p>
+                     <p class="border border-secondary rounded-4 p-2 text-light text-center"><%#Eval("ProductHighlight1") %></p>
                          
-                         <p class="border border-dark rounded-4 p-2 text-dark text-center"><%#Eval("ProductHighlight2") %></p>
+                         <p class="border border-secondary rounded-4 p-2 text-light text-center"><%#Eval("ProductHighlight2") %></p>
 
                      </ul>
                      <hr />
@@ -97,14 +97,14 @@
     <hr />
 
   </div><ul class="list-group list-group-flush">
-    <li class="list-group-item"><p><%#((int)Eval("FreeDelivery")==1)?"Free Delivery":"" %></p></li>
-    <li class="list-group-item"><p><%#((int)Eval("30DaysReturn")==1)?"30 Days Return":"" %></p></li>
-    <li class="list-group-item"><p><%#((int)Eval("Cod")==1)?"Cash on Delivery Available":"" %></p></li>
+    <li class="list-group-item bg-dark text-light"><p><%#((int)Eval("FreeDelivery")==1)?"Free Delivery":"" %></p></li>
+    <li class="list-group-item bg-dark text-light"><p><%#((int)Eval("30DaysReturn")==1)?"30 Days Return":"" %></p></li>
+    <li class="list-group-item bg-dark text-light"><p><%#((int)Eval("Cod")==1)?"Cash on Delivery Available":"" %></p></li>
      </ul>
                  <br />
                  <br />
-                  <div class="d-grid gap-2 mx-auto">
-                      <a href="SignUpPage.aspx" class="btn btn-success btn-sm ">Buy Now</a>
+                  <div class="d-grid gap-2 my-4 mx-auto">
+                      <a href="PreSignUp.aspx" class="btn btn-success btn-sm ">Buy Now</a>
      
  
       </div>
@@ -114,18 +114,19 @@
                 </asp:Repeater>
 
         </div>
-            <div class="container" style="font-size:large;font-family: 'Quicksand', sans-serif;">
+            <div class="container">
     <h5 style="font-size:large;font-family: 'Quicksand', sans-serif;" class="badge bg-success text-light my-2 ">REVIEW'S</h5>
         <div class="container">
             <asp:Repeater ID="ReviewRptr" runat="server">
                 <ItemTemplate>
-                     <div class="container border border-0 rounded-4  my-3 " style="background-color:antiquewhite">
+                     <div class="container border border-light rounded-4  my-3 " >
                          <div class="d-flex m-0 p-0  justify-content-between" >
-                         <h6 class="card-text badge bg-primary text-light pt-2 start-0 mx-4">By <%#Eval("UserName") %></h6>
-                         <h6 class="card-text text-dark pt-2 end-0 mx-4">On <%#Eval("DateTime") %></h6>
+                         <h6 class="card-text   bg-primary text-light p-2 start-0 mx-4">By <%#Eval("UserName") %></h6>
+                             
+                         <h6 class="card-text text-light badge bg-danger pt-2 end-0 mx-4">On <%#Eval("DateTime") %></h6>
                          </div>
                          <div class="pb-3">
-                         <p class="card-text mx-4" ><em><%#Eval("Review") %></em></p>
+                         <h5 class="card-text text-light  mx-4"><%#Eval("Review") %></h5>
 
                          </div>
                      </div>
@@ -135,15 +136,10 @@
 
         </div>
 
-
-
-
-
-
-
     </div>
     </div>
 
-    
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
 </asp:Content>
 

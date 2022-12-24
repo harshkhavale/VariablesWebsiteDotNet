@@ -14,7 +14,7 @@
             <HeaderTemplate>
                  <table class="table">
   <thead>
-    <tr>
+    <tr class="text-light">
       <th scope="col">ID</th>
       <th scope="col">ProductId</th>
       <th scope="col">DateTime</th>
@@ -38,7 +38,7 @@
   <tbody>
             </HeaderTemplate>
             <ItemTemplate>
-                  <tr>
+                  <tr class="text-light">
       <th scope="row"> <%#Eval("ID") %> </th>
                                             <td><%#Eval("ProductID") %></td>
 

@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-     <div class="container my-4" style="font-family: 'Quicksand', sans-serif;">
+     <div class="container my-4 text-light" style="font-family: 'Quicksand', sans-serif;">
                          <h5 style="font-size:large;font-family: 'Quicksand', sans-serif;" class="badge bg-success my-4 mx-2 "> USER DATA</h5>
          <br />
          <br />
@@ -12,7 +12,7 @@
             <HeaderTemplate>
                  <table class="table">
   <thead>
-    <tr>
+    <tr class="text-light">
       <th scope="col">UserID</th>
       <th scope="col">Name</th>
       <th scope="col">UserName</th>
@@ -28,7 +28,7 @@
   <tbody>
             </HeaderTemplate>
             <ItemTemplate>
-                  <tr>
+                  <tr class="text-light">
       <th scope="row"> <%#Eval("id") %> </th>
                                             <td><%#Eval("fullname") %></td>
 

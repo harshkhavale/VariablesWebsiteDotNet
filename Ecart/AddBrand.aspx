@@ -49,7 +49,7 @@
             <HeaderTemplate>
                  <table class="table">
   <thead>
-    <tr>
+    <tr class="text-light">
       <th scope="col">ID's</th>
       <th scope="col">BrandName's</th>
       <th scope="col">Edit</th>
@@ -60,7 +60,7 @@
   <tbody>
             </HeaderTemplate>
             <ItemTemplate>
-                  <tr>
+                  <tr class="text-light">
       <th scope="row"> <%#Eval("Id") %> </th>
       <td><%#Eval("BrandName") %></td>
       <td ><p class="btn btn-danger btn-sm">remove</p></td>
